@@ -46,24 +46,18 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-
-    font-size: 21px;
-    font-weight: 700;
-    color: #1d4ed8;
-
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .logo img {
-    width: 58px;
+    width: 280px;
     height: 58px;
     object-fit: contain;
+    display: block;
 }
 
-.logo span {
-    font-size: 21px;
-}
+
 
 .nav-links {
     list-style: none;
@@ -104,7 +98,7 @@ header {
 
     text-align: center;
 
-    background-image: url("images/school-website.png");
+    background-image: url("images/building.jpeg");
     background-size: cover;
     background-position: center;
 
@@ -1174,16 +1168,14 @@ footer {
     }
 
     .logo img {
-        width: 45px;
-        height: 45px;
-        flex-shrink: 0;
-    }
+    width: 220px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
 
-    .logo span {
-        font-size: 17px;
-        line-height: 1.15;
-        white-space: normal;
-    }
+    
 
 
     /* Hamburger button */
@@ -1456,5 +1448,103 @@ footer {
     }
 
 }
+}
+/* HAMBURGER BUTTON - MOBILE ONLY */
+#menuToggle {
+    display: none;
+}
 
+@media (max-width: 600px) {
+    #menuToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* ===== FINAL MOBILE NAVBAR LAYOUT ===== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 15px;
+        min-height: 68px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 220px;
+        height: 45px;
+        object-fit: contain;
+        display: block;
+    }
+
+    #menuToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+}
+/* ========================================
+   FINAL MOBILE HERO DESIGN
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 500px;
+        height: auto;
+        padding: 38px 18px 45px;
+        background-position: center center;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.12;
+        margin-bottom: 14px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        max-width: 260px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 14px 18px;
+    }
 }
