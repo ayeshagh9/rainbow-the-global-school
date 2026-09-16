@@ -1138,5 +1138,323 @@ footer {
         grid-template-rows: 250px 162px;
     }
 }
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar {
+        padding: 12px 18px;
+        min-height: 68px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    .logo span {
+        font-size: 17px;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+
+    /* Hamburger button */
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        flex-shrink: 0;
+
+        border: none;
+        border-radius: 10px;
+
+        background: #1d4ed8;
+        color: white;
+
+        font-size: 25px;
+
+        cursor: pointer;
+    }
+
+
+    /* Hide desktop navigation */
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        padding: 15px 20px 20px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+    }
+
+
+    /* Show navigation when menu opens */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+
+        padding: 13px 10px;
+
+        font-size: 16px;
+
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 560px;
+        height: auto;
+
+        padding: 80px 20px 60px;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    /* ---------- ANNOUNCEMENTS ---------- */
+
+    .announcements {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .announcement-title {
+        justify-content: center;
+        padding: 13px 18px;
+    }
+
+    .announcement-content {
+        padding: 13px 20px;
+        justify-content: center;
+
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+
+    /* ---------- GENERAL SECTIONS ---------- */
+
+    .section-heading {
+        padding: 0 5px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-section {
+        padding: 70px 20px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- PRINCIPAL ---------- */
+
+    .principal-section {
+        padding: 70px 20px;
+    }
+
+    .principal-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .principal-image {
+        height: 350px;
+    }
+
+    .principal-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- ACADEMICS ---------- */
+
+    .academics-section {
+        padding: 70px 20px;
+    }
+
+    .academic-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- ACTIVITIES ---------- */
+
+    .activities-section {
+        padding: 70px 20px;
+    }
+
+    .activity-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- GALLERY ---------- */
+
+    .gallery-section {
+        padding: 70px 20px;
+    }
+
+    .school-gallery {
+        height: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+
+        gap: 15px;
+    }
+
+    .gallery-item {
+        height: 260px;
+    }
+
+    .gallery-featured {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-section {
+        padding: 70px 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form-box {
+        padding: 25px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
 
 }
