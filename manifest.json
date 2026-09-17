@@ -10,7 +10,7 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "images/school-logo.jpg",
+            "src": "images/Application-icon.png",
             "sizes": "512x512",
             "type": "image/jpeg"
         }
