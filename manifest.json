@@ -1,0 +1,18 @@
+ {
+    "name": "Rainbow The Global School",
+    "short_name": "Rainbow School",
+    "description": "Rainbow The Global School - Inspiring Young Minds and Building Bright Futures.",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1d4ed8",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/school-logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
